@@ -4,22 +4,18 @@ THEOS_DEVICE_PORT 		= 22
 # Default make for rootless
 export THEOS_PACKAGE_SCHEME = rootless
 
-export ARCHS = arm64
+export ARCHS = arm64 arm64e
 
 ifeq ($(THEOS_PACKAGE_SCHEME), rootless)
-export SDKVERSION	= 16.5
-export SYSROOT		= $(THEOS)/sdks/iPhoneOS16.5.sdk
-export SDKROOT		= $(THEOS)/sdks/iPhoneOS16.5.sdk
-export TARGET		= iphone:clang:16.5:16.5
 export THEOS_DEVICE_INSTALL_PATH 	= /var/jb
 export THEOS_PACKAGE_INSTALL_PREFIX = /var/jb
 export FRAMEWORK_SEARCH_PATHS 		= /var/jb/Library/Frameworks
-else
+endif
+
 export SDKVERSION	= 14.5
 export SYSROOT		= $(THEOS)/sdks/iPhoneOS14.5.sdk
 export SDKROOT		= $(THEOS)/sdks/iPhoneOS14.5.sdk
 export TARGET		= iphone:clang:14.5:14.5
-endif
 
 export Bundle = com.apple.springboard
 export DEBUG				= 0

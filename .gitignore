@@ -1,0 +1,7 @@
+.theos
+.DS_Store
+.vscode
+Obfus_Build
+build/
+packages/
+releases/
