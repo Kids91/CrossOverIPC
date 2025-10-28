@@ -1,9 +1,9 @@
 Package: cm90.crossoveripc
 Name: CrossOverIPC
 Depends: mobilesubstrate
-Version: 1.3.1~rootless
+Version: 1.3.2
 Architecture: iphoneos-arm64
-Description: A cross-process communication tool for sending and receiving messages on iOS 15 & 16 for rootless JBs
-Maintainer: @CrazyMind90
+Description: A cross-process communication tool for sending and receiving messages on iOS 15 & 16 for any root type JBs
+Maintainer: @CrazyMind90 - Mod by KidsDev91
 Author: @CrazyMind90
 Section: Tweaks
